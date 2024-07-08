@@ -105,7 +105,7 @@ minetest.register_chatcommand("reset_level", {
 
 minetest.register_chatcommand("addxp", {
     description = "Füge XP hinzu",
-    privs = {},
+    privs = {server},
     params = "<xp> [player_name]",
     func = function(player_name, params)
         local args = params:split(" ")
